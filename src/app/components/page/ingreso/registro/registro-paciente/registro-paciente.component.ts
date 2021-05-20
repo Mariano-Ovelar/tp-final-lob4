@@ -12,4 +12,6 @@ export class RegistroPacienteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
 }

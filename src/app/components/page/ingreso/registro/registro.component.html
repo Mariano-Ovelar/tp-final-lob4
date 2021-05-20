@@ -6,11 +6,11 @@
 
     <div class="row">
         <div class="col custom-control custom-radio">
-            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required checked>
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required >
             <label class="custom-control-label" for="paypal" (click)="selecionarFormulario(false)">Paciente</label>
         </div>
         <div class="col custom-control custom-radio">
-            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required checked>
             <label class="custom-control-label" for="debit" (click)="selecionarFormulario(true)">Especialista</label>
         </div>
     </div>
@@ -19,7 +19,6 @@
     <app-registro-paciente *ngIf="esEspecialista==false"></app-registro-paciente>
     <app-registro-especialista *ngIf="esEspecialista==true"></app-registro-especialista>
 
-    <button class="btn btn-primary btn-lg btn-block" type="submit">Registrarse</button>
 
     <div class="checkbox mb-3 text-center">
         <a href="/ingreso/login">Iniciar secion</a>
